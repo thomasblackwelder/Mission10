@@ -14,6 +14,7 @@ namespace Mission7.Controllers
         public PurchaseController(IPurchaseRepository temp, Cart c )
         {
             repo = temp;
+            cart = c;
         }
 
         [HttpGet]
