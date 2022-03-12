@@ -101,6 +101,9 @@ namespace Mission7.Migrations
                     b.Property<string>("AddressLine3")
                         .HasColumnType("TEXT");
 
+                    b.Property<bool>("BookShipped")
+                        .HasColumnType("INTEGER");
+
                     b.Property<string>("City")
                         .IsRequired()
                         .HasColumnType("TEXT");
