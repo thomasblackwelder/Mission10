@@ -9,5 +9,9 @@ namespace Mission7.Models
     {
         // an IQueryable of type Books that we will refer to as "books" with only a get - so we can only READ data from it 
         IQueryable<Book> Books { get; }
+
+        public void SaveBook(Book b);
+        public void CreateBook(Book b);
+        public void DeleteBook(Book b);
     }
 }
