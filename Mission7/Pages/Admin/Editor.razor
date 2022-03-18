@@ -24,7 +24,7 @@
     </div>
 
     <div class="form-group">
-        <label>Title:</label>
+        <label>Category:</label>
         <ValidationMessage For="@(() => b.Category)"></ValidationMessage>
         <InputText class="form-control" @bind-Value="b.Category"></InputText>
     </div>
@@ -56,7 +56,13 @@
     <div class="form-group">
         <label>ISBN:</label>
         <ValidationMessage For="@(() => b.Isbn)"></ValidationMessage>
-        <InputNumber class="form-control" @bind-Value="b.Isbn"></InputNumber>
+        <InputText class="form-control" @bind-Value="b.Isbn"></InputText>
+    </div>
+
+    <div class="form-group">
+        <label>Classification:</label>
+        <ValidationMessage For="@(() => b.Classification)"></ValidationMessage>
+        <InputText class="form-control" @bind-Value="b.Classification"></InputText>
     </div>
 
     <button type="submit" class="btn btn-@ThemeColor">Save</button>
